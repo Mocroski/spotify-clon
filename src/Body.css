@@ -4,4 +4,5 @@
    height: 100vh;
    color: white;
    background-color: rgb(91, 87, 115);
+   background: linear-gradient(transparent, rgba(0 ,0, 0, 1));
 }
