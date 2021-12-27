@@ -2,5 +2,17 @@
     border: 1px solid black;
     height: 100vh;
     flex: 0.2;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 230px;
+    height: 100vh;
+    background-color: black;
 
+}
+
+.sidebar_logo{
+    height: 70px;
+    padding: 10px;
+    margin-right: auto;
 }
