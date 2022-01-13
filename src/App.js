@@ -32,13 +32,22 @@ const [{user, token}, dispatch] = useDataLayerValue();
           user: user,
         });
       });
+
+      spotify.getUserPlaylists().then((playlists) => {
+      dispatch({
+        type: "SET_PLAYLISTS",
+        playlists: playlists,
+
+      })
+    })
+
     }
 
     //console.log("I HAVE A TOKENNNNN", token);
   }, []);
 
   return <div className="App">{token ?
-      <Player /> :
+      <Player spotify={spotify} /> :
       <Login />}</div>
 }
 
